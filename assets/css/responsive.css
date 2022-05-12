@@ -1,0 +1,988 @@
+/* ==========================================================================
+   header responsive css
+   ========================================================================== */
+
+@media screen and (max-width:1366px) {
+    #cssmenu > ul > li > a{
+        padding: 17px 8px;
+        font-size: 10px;
+    }
+    .logo a{
+        width: 95px;
+        font-size: 18px;
+    }
+    .logo a span{
+        font-size: 30px;
+    }
+    .cart{
+        font-size: 12px;
+    }
+    .wish_list span{
+        font-size: 18px;
+        top: 5px;
+    }
+    #cssmenu > ul > li.has-sub > a span {
+          top: 16px;
+          right: 11px;
+          font-size: 12px;
+        }
+    #cssmenu ul li ul{
+        top: 46px;
+    }
+}
+
+@media screen and (max-width:1241px) {
+    .header_content ul li{
+        font-size: 11px;
+        margin-right: 5px;
+    }
+    .header_content .dropdown button{
+        font-size: 11px;
+    }
+     .wide_container {
+      max-width: 100% !important;
+    }
+    .categories a{
+        padding-right: 0;
+    }
+    .categories {
+      padding: 0px 5px;
+      margin-right: 5px;
+    }
+    .right_menu ul{
+        justify-content: left;
+    }
+}
+@media screen and (max-width:1026px) {
+    #cssmenu ul{
+        justify-content: center;
+    }
+    .categories{
+        display: none !important;
+    }
+    .wish_list p{
+        display: none;
+    }
+    .wish_list{
+        width: 30px;
+    }
+}
+@media (max-width: 991.98px) {
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 46px;
+        text-align: center;
+        padding: 10px 0 0 0;
+        float: none
+    }
+
+    .logo2 {
+        display: none
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #cssmenu {
+        width: 100%
+    }
+
+    #cssmenu ul {
+      width: 100%;
+      display: none;
+      height: 365px;
+      overflow: auto;
+    }
+
+    #cssmenu ul li {
+        width: 100%;
+        border-top: 1px solid #444
+    }
+
+    #cssmenu ul li:hover {
+        background: #363636;
+    }
+
+    #cssmenu ul ul li,
+    #cssmenu li:hover > ul > li {
+        height: auto
+    }
+
+    #cssmenu ul li a,
+    #cssmenu ul ul li a {
+        width: 100%;
+        border-bottom: 0
+    }
+
+    #cssmenu > ul > li {
+        float: none
+    }
+
+    #cssmenu ul ul li a {
+        padding-left: 25px
+    }
+
+    #cssmenu ul ul li {
+      background: #7520DD !important;
+      padding: 14px 0;
+    }
+    #cssmenu ul ul li:hover {
+        background: #7520DD !important
+    }
+
+    #cssmenu ul ul ul li a {
+        padding-left: 35px
+    }
+
+    #cssmenu ul ul li a {
+      color: #fff !important;
+      background: none;
+    }
+
+    #cssmenu ul ul li:hover > a,
+    #cssmenu ul ul li.active > a {
+        color: #fff
+    }
+
+    #cssmenu ul ul,
+    #cssmenu ul ul ul {
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: left
+    }
+
+    #cssmenu > ul > li.has-sub > a:after,
+    #cssmenu > ul > li.has-sub > a:before,
+    #cssmenu ul ul > li.has-sub > a:after,
+    #cssmenu ul ul > li.has-sub > a:before {
+        display: none
+    }
+
+    #cssmenu #head-mobile {
+        display: block;
+        padding: 23px;
+        color: #ddd;
+        font-size: 12px;
+        font-weight: 700
+    }
+
+    .button {
+        width: 55px;
+        height: 46px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        z-index: 12399994;
+    }
+
+    .button::before {
+      -webkit-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      transition: all .3s ease;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      display: block;
+      height: 3px;
+      width: 30px;
+      background: #7520DD;
+      content: '';
+    }
+
+    .button::after {
+      position: absolute;
+      top: 21px;
+      right: 20px;
+      display: block;
+      height: 10px;
+      width: 30px;
+      border-top: 3px solid #7520DD;
+      border-bottom: 3px solid #7520DD;
+      content: '';
+    }
+
+    .button.menu-opened::after {
+      -webkit-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      transition: all .3s ease;
+      top: 20px;
+      border: 0;
+      height: 3px;
+      width: 26px;
+      background: #7520DD;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .button.menu-opened::before {
+          top: 20px;
+          background: #7520DD;
+          width: 26px;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+
+    #cssmenu .submenu-button {
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 0;
+        display: block;
+        border-left: 1px solid #444;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    #cssmenu .submenu-button.submenu-opened {
+        background: #262626
+    }
+
+    #cssmenu ul ul .submenu-button {
+        height: 34px;
+        width: 34px
+    }
+
+    #cssmenu .submenu-button:after {
+        position: absolute;
+        top: 22px;
+        right: 19px;
+        width: 8px;
+        height: 2px;
+        display: block;
+        background: #ddd;
+        content: ''
+    }
+
+    #cssmenu ul ul .submenu-button:after {
+        top: 15px;
+        right: 13px
+    }
+
+    #cssmenu .submenu-button.submenu-opened:after {
+        background: #fff
+    }
+
+    #cssmenu .submenu-button:before {
+        position: absolute;
+        top: 19px;
+        right: 22px;
+        display: block;
+        width: 2px;
+        height: 8px;
+        background: #ddd;
+        content: ''
+    }
+
+    #cssmenu ul ul .submenu-button:before {
+        top: 12px;
+        right: 16px
+    }
+
+    #cssmenu .submenu-button.submenu-opened:before {
+        display: none
+    }
+
+    #cssmenu ul ul ul li.active a {
+        border-left: none
+    }
+
+    #cssmenu > ul > li.has-sub > ul > li.active > a,
+    #cssmenu > ul ul > li.has-sub > ul > li.active > a {
+        border-top: none
+    }
+    #cssmenu ul li ul {
+      background: #fff;
+      box-shadow: none;
+      width: 100%;
+      height: auto;
+      z-index: 9999;
+    }
+    #cssmenu ul li ul {
+      top: 0;
+    }
+    .right_menu {
+      position: absolute;
+      top: 18px;
+      right: 100px;
+      z-index: 999;
+    }
+    .search_bar {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      transform: translate(-50%,-50%);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      z-index: 99999999 !important;
+    }
+}
+
+
+@media (max-width: 895px){
+    .header_content .d-flex {
+      justify-content: left;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .dropdown_right {
+      float: inherit;
+      display: flex;
+      justify-content: center;
+    }
+    .search_box {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .wish_list{
+        width: 30px;
+    }
+    .wish_list span {
+      font-size: 19px;
+      top: 0;
+      position: relative;
+    }
+    .wish_list p{
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .right_menu {
+      top: 22px;
+      right: 80px;
+    }
+    .wish_list, .cart_option{
+        display: none;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   banner responsive css
+   ========================================================================== */
+
+@media (max-width: 1010px) {
+    .banner_area .left-area{
+        max-width: 300px;
+    }
+    .banner_area h3{
+        font-size: 17px;
+    }
+    .banner_area h5{
+        font-size: 13px;
+    }
+    .banner_area .box_content{
+        max-width: 230px;
+        padding: 6px;
+        margin-top: 6px;
+    }
+    .banner_area .box_content img{
+        width: 100px;
+    }
+    .banner_area .box_content .text {
+      padding-left: 7rem;
+    }
+    .banner_area .box_content h6{
+        font-size: 12px;
+    }
+    .banner_area .box_content p{
+        font-size: 16px;
+    }
+    .banner_area .box h4{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .banner_area .social{
+        margin-bottom: 5px;
+    }
+    .banner_area .product_content{
+        height: 25rem;
+    }
+    .banner_area .banner_content{
+        padding-top: 120px;
+    }
+    .banner_area .product_content .image::before {
+      top: 34%;
+      width: 300px;
+      height: 300px;
+    }
+    .banner_area .product_content .image img{
+        max-width: 30rem;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .banner_area .left-area{
+        display: none;
+    }
+    .banner_area .right-area {
+      text-align: center;
+      width: 100%;
+    }
+    .banner_area .social{
+        justify-content: center;
+    }
+    .banner_area .offer_box{
+        margin-right: auto;
+    }
+    .banner_bottom_content h2{
+        justify-content: center;
+        font-size: 20px;
+    }
+    .banner_bottom_content h2 span{
+        font-size: 19px;
+        padding-top: 0px;
+    }
+    .banner_bottom_content p{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ==========================================================================
+   service responsive css
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+    .service_single span{
+        font-size: 35px;
+    }
+    .service_single{
+        padding-left: 48px;
+    }
+    .service_single h5{
+        font-size: 16px;
+    }
+    .service_single p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .service_single span {
+      font-size: 45px;
+      position: relative;
+      transform: inherit;
+      top: auto;
+      left: auto;
+    }
+    .service_single {
+      padding-left: 0;
+      text-align: center;
+    }
+}
+
+
+/* ==========================================================================
+   home_widget_one responsive css
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+    .widget_single .content{
+        max-width: 220px;
+    }
+    .widget_single h6{
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    .widget_single h2{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .widget_single p{
+        font-size: 11px;
+    }
+    .price{
+        font-size: 16px;
+    }
+    .price del{
+        font-size: 16px;
+        padding-top: 0;
+    }
+    .buy_now_btn {
+      width: 96px;
+      height: 40px;
+      line-height: 17px;
+      font-size: 13px;
+    }
+}
+
+@media (max-width: 810px) {
+    .widget_single .content{
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .widget_single .content {
+      max-width: 48%;
+    }
+    .widget_single h6{
+        font-size: 15px;
+    }
+    .widget_single h2{
+        font-size: 25px;
+    }
+    .widget_single p {
+      font-size: 15px;
+    }
+    .price, .price del{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .widget_single h2{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .widget_single p{
+        display: none;
+    }
+    .price{
+        font-size: 16px;
+    }
+    .price del{
+        font-size: 16px;
+        padding-top: 0;
+    }
+}
+
+
+
+/* ==========================================================================
+   latest product responsive css
+   ========================================================================== */
+
+@media (max-width: 1260px) {
+    .latest_product_single .content ul{
+        bottom: 50px;
+    }
+    .latest_product_single .content ul li {
+      margin: 0 1px;
+      width: 25px;
+      height: 25px;
+      font-size: 13px;
+      line-height: 26px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .latest_product_single .content span{
+        font-size: 10px;
+        width: auto !important;
+        height: auto !important;
+    }
+    .latest_products .price {
+      font-size: 16px !important;
+    }
+    .latest_product_single .product_details h6{
+        font-size: 12px;
+    }
+    .latest_products .owl-dot.active span{
+        width: 25px;
+    }
+}
+
+
+
+/* ==========================================================================
+   home widget two responsive css
+   ========================================================================== */
+@media (max-width: 1199.98px) {
+    
+    .home_widget_two .content{
+        max-width: 160px;
+    }
+    .home_widget_two .content h2{
+        font-size: 19px;
+    }
+    .home_widget_two .content h1{
+        font-size: 30px;
+    }
+    .home_widget_two .buy_now_btn {
+      padding: 8px;
+      font-size: 10px !important;
+      line-height: 24px;
+      width: 78px;
+      height: 40px !important;
+    }
+    .home_widget_two .widget_overlay h3{
+        font-size: 15px;
+    }
+    .home_widget_two .widget_overlay h3 span{
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================================================
+   category responsive css
+   ========================================================================== */
+
+
+@media (max-width: 1390px) {
+   
+    .category_single .thumbnail{
+        width: 50px;
+        height: 50px;
+        margin: 20px 0;
+    }
+    .category_single h4{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width: 350px) {
+    .category_single .content{
+        margin: 30px 0;
+    }
+    .category_single h4{
+        font-size: 11px;
+    }
+    .category .price_range{
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================================================
+   special discount responsive css
+   ========================================================================== */
+@media (max-width: 1199.98px) {
+    
+    .special_discount .content .box_radious {
+      top: 50%;
+      left: 50%;
+      width: 350px;
+      height: 350px;
+      transform: translate(-50%,-50%) !important;
+    }
+    .special_discount .discount_image_one{
+        top: 23%;
+        width: 90%;
+    }
+    .special_discount h1{
+        font-size: 27px;
+    }
+    .special_discount .coutdown ul li{
+        font-size: 14px;
+        line-height: normal;
+        width: 75px;
+    }
+    .special_discount .coutdown ul li span{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 991.98px) {
+    .special_discount .content .box_radious{
+        width: 270px;
+        height: 270px;
+    }
+   .special_discount .discount_image_one {
+      top: 35%;
+      width: 90%;
+      left: 10px;
+    }
+    .special_discount .discount_image_two{
+        top: 90px;
+        right: 0;
+    }
+}
+@media (max-width: 690px) {
+    .special_discount .content .box_radious {
+      width: 200px;
+      height: 200px;
+    }
+    .special_discount .discount_image_two{
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .special_discount .container{
+        padding: 20px;
+    }
+    .special_discount .content{
+        min-height: 20rem;
+    }
+    .special_discount .content .box_radious{
+        width: 300px;
+        height: 300px;
+    }
+    .special_discount .discount_image_one {
+      top: 25%;
+      left: 55px;
+      width: 350px;
+    }
+    .special_discount .discount_image_two {
+      max-width: 170px;
+      right: 15%;
+    }
+}
+
+@media (max-width: 415px){
+    
+    .special_discount .discount_image_one{
+        width: 240px;
+    }
+    
+}
+
+
+
+
+/* ==========================================================================
+   footer responsive css
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+    
+    .footer{
+        padding: 10px 0;
+    }
+    
+}
+
+@media (max-width: 598px) {
+    
+    .copyright ul li:first-child{
+        display: none;
+    }
+    .copyright h6{
+        font-size: 13px;
+        word-spacing: 0;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    
+    .copyright ul{
+        justify-content: center;
+    }
+    .copyright h6{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    
+    .footer_widget .contact p{
+        font-size: 13px;
+    }
+    .footer_widget h6{
+        font-size: 12px;
+    }
+    .footer_widget ul li{
+        margin-bottom: 0;
+    }
+    .footer_widget ul li a{
+        font-size: 10px;
+    }
+    .footer_para{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+}
+
+
+/* ==========================================================================
+   popup responsive css
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+   
+    .product_cart_popup .close {
+      top: 0;
+      right: 0;
+      font-size: 29px;
+      color: #000;
+      z-index: 999;
+    }
+    
+}
+
+@media (max-width: 775px) {
+    
+    .view_popup .thumbnail_image{
+        max-width: 190px;
+    }
+    .view_popup h3{
+        font-size: 17px;
+    }
+    .view_popup .rating ul li{
+        font-size: 14px;
+    }
+    .view_popup span{
+        font-size: 12px;
+        margin-top: -22px;
+    }
+    .view_popup h5{
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .view_popup .colors,
+    .view_popup .product_details,
+    .view_popup .size{
+        padding: 5px 0;
+    }
+    .view_popup .colors ul .li{
+        width: 15px;
+        height: 15px;
+    }
+    .view_popup .size ul li {
+      width: 20px;
+      height: 20px;
+      margin-right: 3px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 19px;
+    }
+    .view_popup .product_details p{
+        font-size: 11px;
+    }
+    .view_popup .product_details p span{
+        font-size: 9px;
+    }
+    .view_popup .close {
+      right: 0;
+      top: 0;
+      z-index: 99;
+    }
+    .view_popup .view_content {
+      max-width: 400px;
+      padding-top: 3rem;
+      display: block;
+      overflow: auto;
+    }
+    .view_popup_active{
+        overflow: auto;
+    }
+    .view_popup .content {
+      padding: 0;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    .view_popup .thumbnail_image {
+      max-width: 200px;
+      padding: 0;
+      margin: auto;
+    }
+    
+}
+@media (max-width: 575.98px) {
+    
+    .product_cart_popup .close{
+        top: 0px;
+        color: #fff;
+    }
+    .suggested_products{
+        display: none;
+    }
+    .product_cart_popup .selected_product img {
+      max-width: 140px;
+      height: 155px;
+    }
+    .product_cart_popup .message h6 {
+      padding: 10px 35px;
+      font-size: 13px;
+    }
+    .product_cart_popup .message h6 span {
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .product_cart_popup .selected_product h5{
+        font-size: 14px;
+    }
+    .product_cart_popup .selected_product p, 
+    .product_cart_popup .selected_product h6 {
+        font-size: 12px;
+    }
+    .product_cart_popup .selected_product .buttons a {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+    .view_popup .buttons a {
+      font-size: 10px;
+      padding: 8px 8px;
+      margin-right: 7px;
+    }
+    
+}
+
+@media (max-width: 490px) {
+    
+    .product_cart_popup .selected_product .buttons a{
+        font-size: 8px;
+        padding: 6px;
+    }
+    .view_popup .view_content{
+        max-width: 300px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    
+    .product_cart_popup .selected_product img {
+      max-width: 115px;
+      height: 130px;
+    }
+    .product_cart_popup .message h6{
+        font-size: 10px;
+    }
+    .product_cart_popup .selected_product .text{
+        padding: 0;
+    }
+    
+}
+
+
+
+
+@media (max-width: 1199.98px) {
+    ...
+}
+
+@media (max-width: 991.98px) {
+    ...
+}
+
+@media (max-width: 767.98px) {
+    ...
+}
+
+@media (max-width: 575.98px) {
+    ...
+}
