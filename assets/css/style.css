@@ -501,7 +501,8 @@ nav {
   background: #fff;
   padding: 10px 0;
   transform: translateY(-50%);
-  transition: linear all.5s;
+  transition: linear all .5s;
+  z-index: 999;
 }
 .search_active{
     width: 100%;
@@ -868,6 +869,8 @@ nav {
 }
 .buy_now_btn {
   position: relative;
+  background: #7520DD;
+  border: 1px solid #7520DD;
   display: block;
   color: #fff !important;
   padding: 10px;
@@ -881,101 +884,10 @@ nav {
   transition: linear .4s;
 }
 .buy_now_btn:hover{
+    background: transparent;
     color: #7520DD !important;
 }
-.buy_now_btn::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
-  background: #7520DD;
-  border: 2px solid transparent;
-  border-radius: 0;
-  z-index: -2;
-  transition: linear all .4s;
-}
 
-.buy_now_btn:hover:before{
-  background: transparent;
-  animation:animate .5s linear forwards;
-}
-
-@keyframes animate{
-  0%{
-    width:0;
-    height:0;
-    border-top-color:#094598;
-    border-right-color:transparent;
-    border-left-color:transparent;
-    border-bottom-color:transparent;
-  }
-  
-  50%{
-    width:100%;
-    height:0;
-    border-top-color:#094598;
-    border-right-color:#094598;
-    border-left-color:transparent;
-    border-bottom-color:transparent;
-  }
-  
-  100%{
-    width:100%;
-    height:100%;
-    border-top-color:#7520DD;
-    border-right-color:#7520DD;
-    border-left-color:transparent;
-    border-bottom-color:transparent;
-  }
-}
-
-.buy_now_btn:after{
-  content:'';
-  position:absolute;
-  top:0px;
-  left:0px;
-  width:0;
-  height:0;
-  background:transparent;
-  border:2px solid transparent;
-}
-
-.buy_now_btn:hover:after{
-  animation:animate2 .5s linear forwards;
-  animation-delay: .5s;
-}
-
-@keyframes animate2{
-  0%{
-    width:0;
-    height:0;
-    border-top-color:transparent;
-    border-right-color:transparent;
-    border-left-color:transparent;
-    border-bottom-color:#7520DD;
-  }
-  
-  50%{
-    width:0;
-    height:100%;
-    border-top-color:transparent;
-    border-right-color:transparent;
-    border-left-color:#7520DD;
-    border-bottom-color:#7520DD;
-  }
-  
-  100%{
-    width:100%;
-    height:100%;
-    border-top-color:transparent;
-    border-right-color:transparent;
-    border-left-color:#7520DD;
-    border-bottom-color:#7520DD;
-  }
-}
 
 
 
